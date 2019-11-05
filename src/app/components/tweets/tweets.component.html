@@ -1,1 +1,11 @@
-<p>tweets works!</p>
+<h1>TWEETS</h1>
+
+
+
+
+<ul class="collection" *ngFor="let tweet of tweets">
+  <li class="collection-item avatar">
+    <app-tweet [tweet]="tweet"></app-tweet>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+</ul>
