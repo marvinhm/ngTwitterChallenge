@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Tweet } from '../../models/tweets';
+import { Modal } from 'materialize-css'
 
 @Component({
   selector: 'app-tweets',
@@ -13,6 +14,9 @@ export class TweetsComponent implements OnInit {
   }
 
   ngOnInit() {
+    var elems = document.querySelectorAll('.modal2');
+    Modal.init(elems);
+
     this.tweets = [
       {
         id: 1,
